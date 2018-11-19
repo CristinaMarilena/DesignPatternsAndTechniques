@@ -42,9 +42,9 @@ The reasons why field injection is frowned upon are as follows:
 
 This is one of the never-ending discussions in software development, but major influencers in the industry are getting more opinionated about the topic and started to suggest constructor injection as the better option.
 
-**Constructor injection
+**Constructor injection**
 
-**_Pros:
+**_Pros:_**
 
 - Better testability. You do not need any mocking library or a Spring context in unit tests. You can create an object that you want to test with the new keyword. Such tests are always faster because they not rely on the reflection mechanism. (This question was asked 30 minutes later. If the author had used constructor injection it would have not appeared).
 - Immutability. Once the dependencies are set they cannot be changed.
@@ -52,7 +52,7 @@ This is one of the never-ending discussions in software development, but major i
 - Cleaner expression of mandatory dependencies. Field injection is ambiguous in this matter.
 - Makes developers think about the design. dit wrote about a constructor with 8 parameters, which actually is the sign of a bad design and the God object anti-pattern. It does not matter whether a class has 8 dependencies in its constructor or in fields, it is always wrong. People are more reluctant to add more dependencies to a constructor than via fields. It works as a signal to your brain that you should stop for a while and think about your code structure.
 
-**_Cons:
+**_Cons:_**
 
 More code (but modern IDEs alleviate the pain).
 
