@@ -54,7 +54,7 @@ This is one of the never-ending discussions in software development, but major i
 
 **_Cons:_**
 
-More code (but modern IDEs alleviate the pain).
+- More code (but modern IDEs alleviate the pain).
 
  
  
