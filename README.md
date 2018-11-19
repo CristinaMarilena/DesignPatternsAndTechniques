@@ -42,7 +42,9 @@ The reasons why field injection is frowned upon are as follows:
 
 This is one of the never-ending discussions in software development, but major influencers in the industry are getting more opinionated about the topic and started to suggest constructor injection as the better option.
 
-**Constructor injection**
+**Constructor injection** 
+
+Should usually be used for required dependencies allowing them to be immutable.
 
 **_Pros:_**
 
@@ -56,5 +58,8 @@ This is one of the never-ending discussions in software development, but major i
 
 - More code (but modern IDEs alleviate the pain).
 
+ **Setter injection**
+ 
+ Should be usually used for optional dependencies.
  
  
