@@ -62,4 +62,5 @@ Should usually be used for required dependencies allowing them to be immutable.
  
  Should be usually used for optional dependencies.
  
+ ## Single responsability principle
  
