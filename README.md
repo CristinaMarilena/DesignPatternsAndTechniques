@@ -64,3 +64,10 @@ Should usually be used for required dependencies allowing them to be immutable.
  
  ## Single responsability principle
  
+ ### *ART*
+ 
+  Article : http://blog.ploeh.dk/2010/02/02/RefactoringtoAggregateServices/
+  
+  Personal opinion : 
+  
+  https://hackernoon.com/you-dont-understand-the-single-responsibility-principle-abfdd005b137
