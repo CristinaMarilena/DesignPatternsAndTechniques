@@ -64,10 +64,29 @@ Should usually be used for required dependencies allowing them to be immutable.
  
  ## Single responsability principle
  
- ### *ART*
+ ### *Art.*
  
-  Article : http://blog.ploeh.dk/2010/02/02/RefactoringtoAggregateServices/
+  **Article : http://blog.ploeh.dk/2010/02/02/RefactoringtoAggregateServices/**
+    
+  In outline form, the Introduce Facade Service refactoring follows these steps:
+
+       1. Analyze how dependencies interact to identify clusters of behavior.
+       2. Extract an interface from these clusters.
+       3. Copy the original implementation to a class that implements the new interface.
+       4. Inject the new interface into the consumer.
+       5. Replace the original implementation with a call the new dependency.
+       6. Remove the redundant dependencies.
+       7. Rinse and repeat :)
+
+
+The beauty of Facade Services is that we can keep wrapping one Facade Service in new Facade Services to define more and more coarse-grained building blocks as we get closer and closer to the application boundary.
+
+Keeping each class and its dependencies to simple interactions also makes it much easier to unit test all of them because none of them do anything particularly complex.
+
+Adhering strictly to Constructor Injection makes it easy to see when one violates the SRP and should refactor to an Facade Service.
+
+  **Personal opinion :** **_This looks like a pretty good idea of creating domain concepts out of unnecessary dependencies and a good way of reducing them. Also, it looks really easy to implement and easy to test. If it has to do with SRP I still have a long way to go to completely understand that but in general, it's a good practice to apply for smelly code._**
   
-  Personal opinion : 
+ ### *Art.*
   
-  https://hackernoon.com/you-dont-understand-the-single-responsibility-principle-abfdd005b137
+  Article: https://hackernoon.com/you-dont-understand-the-single-responsibility-principle-abfdd005b137
