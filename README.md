@@ -2,7 +2,7 @@
 
  Design patterns are solutions to general problems that software developers faced during software development. 
  
- ## Design by contract - getting rid of null parameters in Spring
+ ## DESIGN BY CONTRACT - GETTING RID OF NULL PARAMETERS IN SPRING
  
  *It prescribes that software designers should define formal, precise and verifiable interface specifications for software components, which extend the ordinary definition of abstract data types with preconditions, postconditions and invariants. These specifications are referred to as "contracts", in accordance with a conceptual metaphor with the conditions and obligations of business contracts.*
  
@@ -12,7 +12,7 @@
 - each method has a postcondition (what it guarantees, what is returned)
 - each class has an constraint on its state (class invariant)
 
-## Field Dependency Injection Considered Harmful
+## FIELD DEPENDENCY INJECTION CONSIDERED HARMFUL
 
        Field
        @Autowired
@@ -62,7 +62,11 @@ Should usually be used for required dependencies allowing them to be immutable.
  
  Should be usually used for optional dependencies.
  
- ## Single responsability principle
+ ## SINGLE RESPONSABILITY PRINCIPLE
+ 
+ The single responsibility principle is a computer programming principle that states that every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class. All its services should be narrowly aligned with that responsibility. 
+ 
+ **Robert C. Martin expresses the principle as, "A class should have only one reason to change,"[1] although, because of confusion around the word "reason" he more recently stated "This principle is about people."**
  
  ### *Art.*
  
@@ -90,3 +94,7 @@ Adhering strictly to Constructor Injection makes it easy to see when one violate
  ### *Art.*
   
   Article: https://hackernoon.com/you-dont-understand-the-single-responsibility-principle-abfdd005b137
+  
+ ## OPEN CLOSED PRINCIPLE
+ 
+**A class must be open for extension but closed for modifications.That is, such an entity can allow its behaviour to be extended without modifying its source code.**
