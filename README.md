@@ -98,3 +98,13 @@ Adhering strictly to Constructor Injection makes it easy to see when one violate
  ## OPEN CLOSED PRINCIPLE
  
 **A class must be open for extension but closed for modifications.That is, such an entity can allow its behaviour to be extended without modifying its source code.**
+
+## DAO and Service layer
+
+Dao/repository is responsible with mapping you data from the storage format to the application entities.It should handle at least the basic CRUD operations and it should give the oportunity to extend it to more complex ones.
+
+The service layer encapsulates the business logic and offer a way for expanding and promoting separation of concerns.
+
+### **_[Controller] calls [Service(s)] who calls [repository(ies)]_**
+
+
